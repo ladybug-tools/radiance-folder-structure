@@ -1,4 +1,4 @@
-# Scene folder
+# Model folder
 
 This folder includes all the geometry and material files for the study.
 
@@ -32,18 +32,18 @@ In case you want to separate files for different parts of the scene you should f
 2. `*_material.rad`
 3. `*_material.dir`
 
-`*_material.dir` file is optional. If not provided Honeybee will generate black material with the same name for every material in `*_material.dir`.
+`*_material.dir` file is optional. If not provided Honeybee will generate black material with the same name for every material in `*_material.rad`.
 
 ## ./scene/interior
 
 This in an optional folder for <u>interior-only</u> geometries. Naming convention is similar to scene folder. These files will only be included in view matrix calculation and will not be part of daylight matrix. Separating the files is helpful to relax radiance parameters for different phases of matrix-based studies.
 
-<u>This folder is only useful for 3-Phase and 5-Phase studies</u>. For other recipes the files in `interior` folder will be part of the study just like any other geometry file in `scene` folder.
+<u>This folder is only useful for 3-Phase and 5-Phase studies</u>. For other recipes the files in `interior` folder will be part of the study just like any other geometry file in `model` folder.
 
 ## ./scene/exterior
 This in an optional folder for <u>exterior-only</u> geometries. Naming convention is similar to scene folder. These files will only be included in daylight matrix calculation and will not be part of view matrix. Separating the files is helpful to relax radiance parameters for view matrix calculation by minimizing the size of the scene.
 
-<u>This folder is only useful for 3-Phase and 5-Phase studies</u>. For other recipes the files in `exterior` folder will be part of the study just like any other geometry file in `scene` folder.
+<u>This folder is only useful for 3-Phase and 5-Phase studies</u>. For other recipes the files in `exterior` folder will be part of the study just like any other geometry file in `model` folder.
 
 
 # Minimum scene folder
