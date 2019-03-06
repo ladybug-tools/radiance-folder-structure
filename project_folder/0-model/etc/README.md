@@ -25,7 +25,7 @@ In case you want to separate files for different parts of the scene you should f
 2. `*_material.rad`
 3. `*_material.dir`
 
-`*_material.dir` file is optional. If not provided Honeybee will generate black material with the same name for every material in `*_material.dir`.
+`*_material.dir` file is optional. If not provided Honeybee will generate black material with the same name for every material in `*_material.rad`.
 
 
 # Sub-folders
