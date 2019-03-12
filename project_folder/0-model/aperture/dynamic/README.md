@@ -34,7 +34,7 @@ south_window:
   state_0:
     name: clear
     default: south_window..default..000.rad
-    direct: south_window..default..000.rad
+    direct: south_window..direct..000.rad
     blk: south_window..black.rad
     tmtx: clear.xml  # this file must be located at 0-model/bsdf folder
     inmtx: south_window..mtx.rad
@@ -42,7 +42,7 @@ south_window:
   state_1:
     name: diffuse
     default: south_window..default..001.rad
-    direct: south_window..default..001.rad
+    direct: south_window..direct..001.rad
     blk: south_window..black.rad
     tmtx: diffuse50.xml  # this file must be located at 0-model/bsdf folder
     inmtx: south_window..mtx.rad
@@ -68,4 +68,4 @@ skylight:
 ## Naming convention
 
 It is recommended to name the file as `<aperture name>..<field name>..<state count>`. For
-instance `skylight..direct.000.rad` is the direct representation of skylight for state 0.
+instance `skylight..direct..000.rad` is the direct representation of skylight for state 0.
