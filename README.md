@@ -36,10 +36,11 @@ See README.md inside each folder for more information.
     │   ├───ies
     │   ├───sky
     │   └───sun
+    ├───02-bsdf
     ├───03-octree                 [required]
     ├───04-grid                   [required - for grid-based workflows]
     ├───05-view                   [required - for view-based workflows]
-    ├───05-options                [required]
+    ├───06-options                [required]
     ├───07-output                 [required]
     │   ├───matrix
     │   └───temp
@@ -59,6 +60,6 @@ Minimum required folder structure
     ├───03-octree                 [required]
     ├───04-grid                   [required - for grid-based workflows]
     ├───05-view                   [required - for view-based workflows]
-    ├───05-options                [required]
+    ├───06-options                [required]
     └───07-output                 [required]
 ```
