@@ -1,0 +1,19 @@
+dist: trusty
+sudo: required
+language: node_js
+node_js: "8"
+
+jobs:
+  include:
+  - stage: install
+    if: branch = master AND (NOT type IN (pull_request))
+    script: npm install
+    skip_cleanup: true
+  - stage: deploy
+    if: branch = master AND (NOT type IN (pull_request))
+    provide: script
+    skip_cleanup: true
+    script:
+    - git config --global user.email "releases@ladybug.tools"
+    - git config --global user.name "ladybugbot"
+    - npx semantic-release
