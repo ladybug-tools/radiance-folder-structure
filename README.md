@@ -13,30 +13,37 @@ See README.md inside each folder for more information.
 
 ```
 └─project_folder
-    ├───00-model                   [required]
-    │   ├───aperture
-    │   │   ├───dynamic
-    │   │   └───static
-    │   ├───bsdf
-    │   └───etc                   [required]
-    │       ├───opaque            [required]
-    │       │   ├───outdoor
-    │       │   └───indoor
-    │       └───non-opaque        [required]
-    │           ├───outdoor
-    │           └───indoor
+    ├───00-model                  [required]
+    │   ├───dynamic
+    │   │   ├───aperture
+    │   │   │   └───interior
+    │   │   ├───nonopaque
+    │   │   │   ├───indoor
+    │   │   │   └───outdoor
+    │   │   └───opaque
+    │   │       ├───indoor
+    │   │       └───outdoor
+    │   └───static                [required]
+    │       ├───aperture
+    │       │   └───interior
+    │       ├───nonopaque         [required]
+    │       │   ├───indoor
+    │       │   └───outdoor
+    │       └───opaque            [required]
+    │           ├───indoor
+    │           └───outdoor
     ├───01-lightsource            [required]
     │   ├───ies
     │   ├───sky
     │   └───sun
-    ├───02-octree                 [required]
-    ├───03-grid                   [required - for grid-based workflows]
-    ├───04-view                   [required - for view-based workflows]
+    ├───03-octree                 [required]
+    ├───04-grid                   [required - for grid-based workflows]
+    ├───05-view                   [required - for view-based workflows]
     ├───05-options                [required]
-    ├───06-output                 [required]
+    ├───07-output                 [required]
     │   ├───matrix
     │   └───temp
-    └───07-postprocess
+    └───08-postprocess
 ```
 
 Minimum required folder structure
@@ -44,14 +51,14 @@ Minimum required folder structure
 ```
 └─project_folder
     ├───00-model                  [required]
-    │   └───etc                   [required]
-    │       ├───opaque            [required]
-    │       └───non-opaque        [required]
-    ├───01-lightsource            [required]
+    │   └───static                [required]
+    │       ├───nonopaque         [required]
+    │       └───opaque            [required]
+    ├───01-lightsource            [required - for daylight studies]
     │   └───sky / sun
-    ├───02-octree                 [required]
-    ├───03-grid                   [required - for grid-based workflows]
-    ├───04-view                   [required - for view-based workflows]
+    ├───03-octree                 [required]
+    ├───04-grid                   [required - for grid-based workflows]
+    ├───05-view                   [required - for view-based workflows]
     ├───05-options                [required]
-    └───06-output                 [required]
+    └───07-output                 [required]
 ```
