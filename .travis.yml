@@ -5,10 +5,6 @@ node_js: "8"
 
 jobs:
   include:
-  - stage: install
-    if: branch = master AND (NOT type IN (pull_request))
-    script: npm install
-    skip_cleanup: true
   - stage: deploy
     if: branch = master AND (NOT type IN (pull_request))
     provide: script
