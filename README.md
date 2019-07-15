@@ -13,7 +13,14 @@ See README.md inside each folder for more information.
 
 ```
 └─project_folder
-    ├───00-model                  [required]
+    ├───asset
+    │   ├───grid
+    │   ├───ies
+    │   ├───sky
+    │   ├───sun
+    │   └───view
+    ├───model
+    │   ├───bsdf
     │   ├───dynamic
     │   │   ├───aperture
     │   │   │   └───interior
@@ -23,43 +30,19 @@ See README.md inside each folder for more information.
     │   │   └───opaque
     │   │       ├───indoor
     │   │       └───outdoor
-    │   └───static                [required]
+    │   └───static
     │       ├───aperture
     │       │   └───interior
-    │       ├───nonopaque         [required]
+    │       ├───nonopaque
     │       │   ├───indoor
     │       │   └───outdoor
-    │       └───opaque            [required]
+    │       └───opaque
     │           ├───indoor
     │           └───outdoor
-    ├───01-lightsource            [required]
-    │   ├───ies
-    │   ├───sky
-    │   └───sun
-    ├───02-bsdf
-    ├───03-octree                 [required]
-    ├───04-grid                   [required - for grid-based workflows]
-    ├───05-view                   [required - for view-based workflows]
-    ├───06-options                [required]
-    ├───07-output                 [required]
+    ├───output
     │   ├───matrix
+    │   ├───octree
+    │   ├───postprocess
     │   └───temp
-    └───08-postprocess
-```
-
-Minimum required folder structure
-
-```
-└─project_folder
-    ├───00-model                  [required]
-    │   └───static                [required]
-    │       ├───nonopaque         [required]
-    │       └───opaque            [required]
-    ├───01-lightsource            [required - for daylight studies]
-    │   └───sky / sun
-    ├───03-octree                 [required]
-    ├───04-grid                   [required - for grid-based workflows]
-    ├───05-view                   [required - for view-based workflows]
-    ├───06-options                [required]
-    └───07-output                 [required]
+    └───system
 ```
