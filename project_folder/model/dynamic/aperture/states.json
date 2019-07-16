@@ -4,7 +4,7 @@
       "name": "clear",
       "default": "./south_window..default..000.rad",
       "direct": "./south_window..direct..000.rad",
-      "blk": "./south_window..black.rad",
+      "black": "./south_window..black.rad",
       "tmtx": "clear.xml",
       "vmtx": "./south_window..mtx.rad",
       "dmtx": "./south_window..mtx.rad"
@@ -13,7 +13,7 @@
       "name": "diffuse",
       "default": "./south_window..default..001.rad",
       "direct": "./south_window..direct..001.rad",
-      "blk": "./south_window..black.rad",
+      "black": "./south_window..black.rad",
       "tmtx": "diffuse50.xml",
       "vmtx": "./south_window..mtx.rad",
       "dmtx": "./south_window..mtx.rad"
