@@ -1,6 +1,6 @@
 {
     "count": 131,
-    "aperture_groups": [
+    "light_path": [
         ["static_apertures"],
         ["south_window"] 
     ]
