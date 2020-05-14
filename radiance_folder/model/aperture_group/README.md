@@ -82,7 +82,6 @@ It is recommended that the `.rad` files be named with a standard convention as f
 `{aperture identifier}..{field name}..{state count}.rad`. For instance, 
 `skylight..direct..000.rad` is the direct representation of skylight for state 0.
 
-Note that the `"identifier"` key in the JSONs is only used to provide a human-readable
-identifier for the state. It is recommended that it start with an integer index for the
-state (eg. `0`, `1`, etc.) in order to make its position in the order of the states
-clearer.
+It is recommended that the `"identifier"` key in the JSONs starts with an integer index
+for the state (eg. `0`, `1`, etc.) in order to make its position in the order of the
+states clearer.
