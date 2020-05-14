@@ -20,12 +20,12 @@ modeled the ground with two different materials for winter versus summer like so
 {
   "ground": [
     {
-      "name": "0_grass_covered",
+      "identifier": "0_grass_covered",
       "default": "ground..summer..000.rad",
       "direct": "ground..direct..000.rad",
     },
     {
-      "name": "1_snow_covered",
+      "identifier": "1_snow_covered",
       "default": "ground..winter..001.rad",
       "direct": "ground..direct..000.rad"
     }
@@ -53,12 +53,12 @@ like this:
 {
   "outdoor_trees": [
     {
-      "name": "0_summer_condition",
+      "identifier": "0_summer_condition",
       "default": "trees..summer..000.rad",
       "direct": "trees..direct..000.rad",
     },
     {
-      "name": "1_winter_condition",
+      "identifier": "1_winter_condition",
       "default": "trees..winter..001.rad",
       "direct": "trees..direct..001.rad"
     }

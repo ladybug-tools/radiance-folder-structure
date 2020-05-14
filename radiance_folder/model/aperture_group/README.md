@@ -30,7 +30,7 @@ states. Below is the content of `states.json` file:
 {
   "south_window": [
     {
-      "name": "0_clear",
+      "identifier": "0_clear",
       "default": "./south_window..default..000.rad",
       "direct": "./south_window..direct..000.rad",
       "black": "./south_window..black.rad",
@@ -39,7 +39,7 @@ states. Below is the content of `states.json` file:
       "dmtx": "./south_window..mtx.rad"
     },
     {
-      "name": "1_diffuse",
+      "identifier": "1_diffuse",
       "default": "./south_window..default..001.rad",
       "direct": "./south_window..direct..001.rad",
       "black": "./south_window..black.rad",
@@ -64,7 +64,7 @@ model above, the following needs to be added to the `states.json` file:
   ...
   "skylight": [
     {
-      "name": "0_diffuse",
+      "identifier": "0_diffuse",
       "default": "skylight..default..000.rad",
       "direct": "skylight..direct..000.rad",
       "black": "skylight..black..000.rad",
@@ -79,10 +79,10 @@ model above, the following needs to be added to the `states.json` file:
 ## Naming convention
 
 It is recommended that the `.rad` files be named with a standard convention as follows:
-`{aperture name}..{field name}..{state count}.rad`. For instance, 
+`{aperture identifier}..{field name}..{state count}.rad`. For instance, 
 `skylight..direct..000.rad` is the direct representation of skylight for state 0.
 
-Note that the `"name"` key in the JSONs is only used to provide a human-readable name
-for the state and it is not required. However, if it is provided, it is recommended
-that it start with an integer index for the state (eg. `0`, `1`, etc.) in order to
-make its position in the order of the states clearer.
+Note that the `"identifier"` key in the JSONs is only used to provide a human-readable
+identifier for the state. It is recommended that it start with an integer index for the
+state (eg. `0`, `1`, etc.) in order to make its position in the order of the states
+clearer.
