@@ -19,7 +19,7 @@ that the light will go through before it arrives to this sensor grid.
 ```json
 {
     "count": 46,
-    "aperture_groups": [
+    "light_path": [
         ["static_apertures"],
         ["south_window"] 
     ]
@@ -32,7 +32,7 @@ list can have multiple aperture groups.
 ```json
 {
     "count": 24,
-    "aperture_groups": [
+    "light_path": [
         ["static_apertures"],
         ["interior_window", "atrium_skylight"] 
     ]
